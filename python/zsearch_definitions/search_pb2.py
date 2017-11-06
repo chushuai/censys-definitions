@@ -25,20 +25,419 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n\x0csearch.proto\x12\x07zsearch\x1a\x0f\x61nonstore.proto\x1a\x0fhoststore.proto\x1a\trpc.proto2\x94\n\n\x0c\x41\x64minService\x12\x35\n\x08Shutdown\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x33\n\x06Status\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x37\n\nStatistics\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x36\n\tPruneIPv4\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x38\n\x0bPruneDomain\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x39\n\x0cUpdateASData\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12?\n\x12UpdateLocationData\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x41\n\x14ValidateCertificates\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x41\n\x14\x46ixCertificateSource\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12;\n\x0e\x44umpIPv4ToJSON\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12=\n\x10\x44umpDomainToJSON\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x43\n\x16\x44umpCertificatesToJSON\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12;\n\x0e\x44umpKeysToJSON\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x41\n\x14RegenerateIPv4Deltas\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12\x43\n\x16RegenerateDomainDeltas\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12H\n\x1bRegenerateCertificateDeltas\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12T\n RegenerateSingleCertificateDelta\x12\x17.zsearch.AnonymousQuery\x1a\x15.zsearch.CommandReply\"\x00\x12\x42\n\x15ReprocessCertificates\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x12N\n\x1aReprocessSingleCertificate\x12\x17.zsearch.AnonymousQuery\x1a\x15.zsearch.CommandReply\"\x00\x12\x31\n\x04Ping\x12\x10.zsearch.Command\x1a\x15.zsearch.CommandReply\"\x00\x32\x8b\x0b\n\x0cQueryService\x12\x45\n\x11GetHostIPv4Record\x12\x12.zsearch.HostQuery\x1a\x1a.zsearch.HostQueryResponse\"\x00\x12\x36\n\x11PutHostIPv4Record\x12\x0f.zsearch.Record\x1a\x0e.zsearch.Delta\"\x00\x12\x39\n\x11\x44\x65lHostIPv4Record\x12\x12.zsearch.HostQuery\x1a\x0e.zsearch.Delta\"\x00\x12\x45\n\x11GetAllIPv4Records\x12\x12.zsearch.HostQuery\x1a\x1a.zsearch.HostQueryResponse\"\x00\x12\x38\n\x10GetHostIPv4Delta\x12\x12.zsearch.HostQuery\x1a\x0e.zsearch.Delta\"\x00\x12G\n\x13GetHostDomainRecord\x12\x12.zsearch.HostQuery\x1a\x1a.zsearch.HostQueryResponse\"\x00\x12\x38\n\x13PutHostDomainRecord\x12\x0f.zsearch.Record\x1a\x0e.zsearch.Delta\"\x00\x12;\n\x13\x44\x65lHostDomainRecord\x12\x12.zsearch.HostQuery\x1a\x0e.zsearch.Delta\"\x00\x12G\n\x13GetAllDomainRecords\x12\x12.zsearch.HostQuery\x1a\x1a.zsearch.HostQueryResponse\"\x00\x12:\n\x12GetHostDomainDelta\x12\x12.zsearch.HostQuery\x1a\x0e.zsearch.Delta\"\x00\x12L\n\x0eGetCertificate\x12\x17.zsearch.AnonymousQuery\x1a\x1f.zsearch.AnonymousQueryResponse\"\x00\x12H\n\x11UpsertCertificate\x12\x18.zsearch.AnonymousRecord\x1a\x17.zsearch.AnonymousDelta\"\x00\x12K\n\x14UpsertRawCertificate\x12\x18.zsearch.AnonymousRecord\x1a\x17.zsearch.AnonymousDelta\"\x00\x12Q\n\x13GetCryptographicKey\x12\x17.zsearch.AnonymousQuery\x1a\x1f.zsearch.AnonymousQueryResponse\"\x00\x12M\n\x16UpsertCryptographicKey\x12\x18.zsearch.AnonymousRecord\x1a\x17.zsearch.AnonymousDelta\"\x00\x12@\n\x11GetPublicLocation\x12\x12.zsearch.HostQuery\x1a\x15.zsearch.LocationAtom\"\x00\x12\x44\n\x15GetRestrictedLocation\x12\x12.zsearch.HostQuery\x1a\x15.zsearch.LocationAtom\"\x00\x12\x31\n\x08GetWHOIS\x12\x12.zsearch.HostQuery\x1a\x0f.zsearch.Record\"\x00\x12\x38\n\x0fGetUserMetadata\x12\x12.zsearch.HostQuery\x1a\x0f.zsearch.Record\"\x00\x12;\n\x0fPutUserMetadata\x12\x0f.zsearch.Record\x1a\x15.zsearch.CommandReply\"\x00\x12\x42\n\x0cGetRootStore\x12\x17.zsearch.RootStoreQuery\x1a\x17.zsearch.RootStoreReply\"\x00\x62\x06proto3')
   ,
   dependencies=[anonstore__pb2.DESCRIPTOR,hoststore__pb2.DESCRIPTOR,rpc__pb2.DESCRIPTOR,])
+
+
+
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
+_ADMINSERVICE = _descriptor.ServiceDescriptor(
+  name='AdminService',
+  full_name='zsearch.AdminService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=71,
+  serialized_end=1371,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='Shutdown',
+    full_name='zsearch.AdminService.Shutdown',
+    index=0,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='Status',
+    full_name='zsearch.AdminService.Status',
+    index=1,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='Statistics',
+    full_name='zsearch.AdminService.Statistics',
+    index=2,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='PruneIPv4',
+    full_name='zsearch.AdminService.PruneIPv4',
+    index=3,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='PruneDomain',
+    full_name='zsearch.AdminService.PruneDomain',
+    index=4,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='UpdateASData',
+    full_name='zsearch.AdminService.UpdateASData',
+    index=5,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='UpdateLocationData',
+    full_name='zsearch.AdminService.UpdateLocationData',
+    index=6,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='ValidateCertificates',
+    full_name='zsearch.AdminService.ValidateCertificates',
+    index=7,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='FixCertificateSource',
+    full_name='zsearch.AdminService.FixCertificateSource',
+    index=8,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DumpIPv4ToJSON',
+    full_name='zsearch.AdminService.DumpIPv4ToJSON',
+    index=9,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DumpDomainToJSON',
+    full_name='zsearch.AdminService.DumpDomainToJSON',
+    index=10,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DumpCertificatesToJSON',
+    full_name='zsearch.AdminService.DumpCertificatesToJSON',
+    index=11,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DumpKeysToJSON',
+    full_name='zsearch.AdminService.DumpKeysToJSON',
+    index=12,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='RegenerateIPv4Deltas',
+    full_name='zsearch.AdminService.RegenerateIPv4Deltas',
+    index=13,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='RegenerateDomainDeltas',
+    full_name='zsearch.AdminService.RegenerateDomainDeltas',
+    index=14,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='RegenerateCertificateDeltas',
+    full_name='zsearch.AdminService.RegenerateCertificateDeltas',
+    index=15,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='RegenerateSingleCertificateDelta',
+    full_name='zsearch.AdminService.RegenerateSingleCertificateDelta',
+    index=16,
+    containing_service=None,
+    input_type=rpc__pb2._ANONYMOUSQUERY,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='ReprocessCertificates',
+    full_name='zsearch.AdminService.ReprocessCertificates',
+    index=17,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='ReprocessSingleCertificate',
+    full_name='zsearch.AdminService.ReprocessSingleCertificate',
+    index=18,
+    containing_service=None,
+    input_type=rpc__pb2._ANONYMOUSQUERY,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='Ping',
+    full_name='zsearch.AdminService.Ping',
+    index=19,
+    containing_service=None,
+    input_type=rpc__pb2._COMMAND,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_ADMINSERVICE)
 
+DESCRIPTOR.services_by_name['AdminService'] = _ADMINSERVICE
+
+
+_QUERYSERVICE = _descriptor.ServiceDescriptor(
+  name='QueryService',
+  full_name='zsearch.QueryService',
+  file=DESCRIPTOR,
+  index=1,
+  options=None,
+  serialized_start=1374,
+  serialized_end=2793,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='GetHostIPv4Record',
+    full_name='zsearch.QueryService.GetHostIPv4Record',
+    index=0,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=rpc__pb2._HOSTQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='PutHostIPv4Record',
+    full_name='zsearch.QueryService.PutHostIPv4Record',
+    index=1,
+    containing_service=None,
+    input_type=hoststore__pb2._RECORD,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DelHostIPv4Record',
+    full_name='zsearch.QueryService.DelHostIPv4Record',
+    index=2,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetAllIPv4Records',
+    full_name='zsearch.QueryService.GetAllIPv4Records',
+    index=3,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=rpc__pb2._HOSTQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetHostIPv4Delta',
+    full_name='zsearch.QueryService.GetHostIPv4Delta',
+    index=4,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetHostDomainRecord',
+    full_name='zsearch.QueryService.GetHostDomainRecord',
+    index=5,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=rpc__pb2._HOSTQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='PutHostDomainRecord',
+    full_name='zsearch.QueryService.PutHostDomainRecord',
+    index=6,
+    containing_service=None,
+    input_type=hoststore__pb2._RECORD,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='DelHostDomainRecord',
+    full_name='zsearch.QueryService.DelHostDomainRecord',
+    index=7,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetAllDomainRecords',
+    full_name='zsearch.QueryService.GetAllDomainRecords',
+    index=8,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=rpc__pb2._HOSTQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetHostDomainDelta',
+    full_name='zsearch.QueryService.GetHostDomainDelta',
+    index=9,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._DELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetCertificate',
+    full_name='zsearch.QueryService.GetCertificate',
+    index=10,
+    containing_service=None,
+    input_type=rpc__pb2._ANONYMOUSQUERY,
+    output_type=rpc__pb2._ANONYMOUSQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='UpsertCertificate',
+    full_name='zsearch.QueryService.UpsertCertificate',
+    index=11,
+    containing_service=None,
+    input_type=anonstore__pb2._ANONYMOUSRECORD,
+    output_type=anonstore__pb2._ANONYMOUSDELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='UpsertRawCertificate',
+    full_name='zsearch.QueryService.UpsertRawCertificate',
+    index=12,
+    containing_service=None,
+    input_type=anonstore__pb2._ANONYMOUSRECORD,
+    output_type=anonstore__pb2._ANONYMOUSDELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetCryptographicKey',
+    full_name='zsearch.QueryService.GetCryptographicKey',
+    index=13,
+    containing_service=None,
+    input_type=rpc__pb2._ANONYMOUSQUERY,
+    output_type=rpc__pb2._ANONYMOUSQUERYRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='UpsertCryptographicKey',
+    full_name='zsearch.QueryService.UpsertCryptographicKey',
+    index=14,
+    containing_service=None,
+    input_type=anonstore__pb2._ANONYMOUSRECORD,
+    output_type=anonstore__pb2._ANONYMOUSDELTA,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetPublicLocation',
+    full_name='zsearch.QueryService.GetPublicLocation',
+    index=15,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._LOCATIONATOM,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetRestrictedLocation',
+    full_name='zsearch.QueryService.GetRestrictedLocation',
+    index=16,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._LOCATIONATOM,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetWHOIS',
+    full_name='zsearch.QueryService.GetWHOIS',
+    index=17,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._RECORD,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetUserMetadata',
+    full_name='zsearch.QueryService.GetUserMetadata',
+    index=18,
+    containing_service=None,
+    input_type=rpc__pb2._HOSTQUERY,
+    output_type=hoststore__pb2._RECORD,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='PutUserMetadata',
+    full_name='zsearch.QueryService.PutUserMetadata',
+    index=19,
+    containing_service=None,
+    input_type=hoststore__pb2._RECORD,
+    output_type=rpc__pb2._COMMANDREPLY,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetRootStore',
+    full_name='zsearch.QueryService.GetRootStore',
+    index=20,
+    containing_service=None,
+    input_type=rpc__pb2._ROOTSTOREQUERY,
+    output_type=rpc__pb2._ROOTSTOREREPLY,
+    options=None,
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_QUERYSERVICE)
+
+DESCRIPTOR.services_by_name['QueryService'] = _QUERYSERVICE
 
 try:
   # THESE ELEMENTS WILL BE DEPRECATED.
   # Please use the generated *_pb2_grpc.py files instead.
   import grpc
-  from grpc.framework.common import cardinality
-  from grpc.framework.interfaces.face import utilities as face_utilities
   from grpc.beta import implementations as beta_implementations
   from grpc.beta import interfaces as beta_interfaces
+  from grpc.framework.common import cardinality
+  from grpc.framework.interfaces.face import utilities as face_utilities
 
 
   class AdminServiceStub(object):
@@ -160,101 +559,141 @@ try:
     """
 
     def Shutdown(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def Status(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def Statistics(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def PruneIPv4(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def PruneDomain(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def UpdateASData(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def UpdateLocationData(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def ValidateCertificates(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def FixCertificateSource(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DumpIPv4ToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DumpDomainToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DumpCertificatesToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DumpKeysToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def RegenerateIPv4Deltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def RegenerateDomainDeltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def RegenerateCertificateDeltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def RegenerateSingleCertificateDelta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def ReprocessCertificates(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def ReprocessSingleCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def Ping(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
@@ -369,6 +808,8 @@ try:
 
 
   class QueryServiceStub(object):
+    # missing associated documentation comment in .proto file
+    pass
 
     def __init__(self, channel):
       """Constructor.
@@ -484,108 +925,152 @@ try:
 
 
   class QueryServiceServicer(object):
+    # missing associated documentation comment in .proto file
+    pass
 
     def GetHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def PutHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DelHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetAllIPv4Records(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetHostIPv4Delta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def PutHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def DelHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetAllDomainRecords(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetHostDomainDelta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def UpsertCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def UpsertRawCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetCryptographicKey(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def UpsertCryptographicKey(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetPublicLocation(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetRestrictedLocation(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetWHOIS(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetUserMetadata(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def PutUserMetadata(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
 
     def GetRootStore(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.set_code(grpc.StatusCode.UNIMPLEMENTED)
       context.set_details('Method not implemented!')
       raise NotImplementedError('Method not implemented!')
@@ -714,44 +1199,84 @@ try:
 
     """
     def Shutdown(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def Status(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def Statistics(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def PruneIPv4(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def PruneDomain(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def UpdateASData(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def UpdateLocationData(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def ValidateCertificates(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def FixCertificateSource(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DumpIPv4ToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DumpDomainToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DumpCertificatesToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DumpKeysToJSON(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def RegenerateIPv4Deltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def RegenerateDomainDeltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def RegenerateCertificateDeltas(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def RegenerateSingleCertificateDelta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def ReprocessCertificates(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def ReprocessSingleCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def Ping(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
 
 
@@ -765,63 +1290,103 @@ try:
 
     """
     def Shutdown(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     Shutdown.future = None
     def Status(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     Status.future = None
     def Statistics(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     Statistics.future = None
     def PruneIPv4(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     PruneIPv4.future = None
     def PruneDomain(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     PruneDomain.future = None
     def UpdateASData(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     UpdateASData.future = None
     def UpdateLocationData(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     UpdateLocationData.future = None
     def ValidateCertificates(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     ValidateCertificates.future = None
     def FixCertificateSource(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     FixCertificateSource.future = None
     def DumpIPv4ToJSON(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DumpIPv4ToJSON.future = None
     def DumpDomainToJSON(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DumpDomainToJSON.future = None
     def DumpCertificatesToJSON(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DumpCertificatesToJSON.future = None
     def DumpKeysToJSON(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DumpKeysToJSON.future = None
     def RegenerateIPv4Deltas(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     RegenerateIPv4Deltas.future = None
     def RegenerateDomainDeltas(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     RegenerateDomainDeltas.future = None
     def RegenerateCertificateDeltas(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     RegenerateCertificateDeltas.future = None
     def RegenerateSingleCertificateDelta(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     RegenerateSingleCertificateDelta.future = None
     def ReprocessCertificates(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     ReprocessCertificates.future = None
     def ReprocessSingleCertificate(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     ReprocessSingleCertificate.future = None
     def Ping(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     Ping.future = None
 
@@ -984,47 +1549,91 @@ try:
     It is recommended to use the GA API (classes and functions in this
     file not marked beta) for all further purposes. This class was generated
     only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0."""
+    # missing associated documentation comment in .proto file
+    pass
     def GetHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def PutHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DelHostIPv4Record(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetAllIPv4Records(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetHostIPv4Delta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def PutHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def DelHostDomainRecord(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetAllDomainRecords(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetHostDomainDelta(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def UpsertCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def UpsertRawCertificate(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetCryptographicKey(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def UpsertCryptographicKey(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetPublicLocation(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetRestrictedLocation(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetWHOIS(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetUserMetadata(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def PutUserMetadata(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
     def GetRootStore(self, request, context):
+      # missing associated documentation comment in .proto file
+      pass
       context.code(beta_interfaces.StatusCode.UNIMPLEMENTED)
 
 
@@ -1034,67 +1643,111 @@ try:
     It is recommended to use the GA API (classes and functions in this
     file not marked beta) for all further purposes. This class was generated
     only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0."""
+    # missing associated documentation comment in .proto file
+    pass
     def GetHostIPv4Record(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetHostIPv4Record.future = None
     def PutHostIPv4Record(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     PutHostIPv4Record.future = None
     def DelHostIPv4Record(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DelHostIPv4Record.future = None
     def GetAllIPv4Records(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetAllIPv4Records.future = None
     def GetHostIPv4Delta(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetHostIPv4Delta.future = None
     def GetHostDomainRecord(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetHostDomainRecord.future = None
     def PutHostDomainRecord(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     PutHostDomainRecord.future = None
     def DelHostDomainRecord(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     DelHostDomainRecord.future = None
     def GetAllDomainRecords(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetAllDomainRecords.future = None
     def GetHostDomainDelta(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetHostDomainDelta.future = None
     def GetCertificate(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetCertificate.future = None
     def UpsertCertificate(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     UpsertCertificate.future = None
     def UpsertRawCertificate(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     UpsertRawCertificate.future = None
     def GetCryptographicKey(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetCryptographicKey.future = None
     def UpsertCryptographicKey(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     UpsertCryptographicKey.future = None
     def GetPublicLocation(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetPublicLocation.future = None
     def GetRestrictedLocation(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetRestrictedLocation.future = None
     def GetWHOIS(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetWHOIS.future = None
     def GetUserMetadata(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetUserMetadata.future = None
     def PutUserMetadata(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     PutUserMetadata.future = None
     def GetRootStore(self, request, timeout, metadata=None, with_call=False, protocol_options=None):
+      # missing associated documentation comment in .proto file
+      pass
       raise NotImplementedError()
     GetRootStore.future = None
 

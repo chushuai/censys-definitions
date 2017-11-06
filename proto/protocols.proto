@@ -31,6 +31,19 @@ enum Protocol {
     PROTO_HTTP_WWW = 26; // http://www.domain.tld, for use within Alexa
     PROTO_HTTPS_WWW = 27; // https://www.domain.tld, for use within Alexa
     PROTO_SMB = 28;
+
+    PROTO_MYSQL=301;
+    PROTO_REDIS=302;
+    PROTO_RDP=303;
+    PROTO_MEMCACHE=304;
+    PROTO_MONGODB=305;
+    PROTO_AMQP=306;
+    PROTO_RIAK=307;
+    PROTO_IKE=308; 
+    PROTO_CODESYS=309;
+    PROTO_PCWORX=310; 
+    PROTO_OMRON=311;
+    PROTO_ETHERNETIP=312;
 }
 
 enum Subprotocol {

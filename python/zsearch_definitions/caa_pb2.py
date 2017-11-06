@@ -22,7 +22,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n\tcaa.proto\x12\x07zsearch\"D\n\x0b\x43\x41\x41TagValue\x12\x0c\n\x04\x66lag\x18\x01 \x01(\r\x12\x0b\n\x03tag\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12\x0b\n\x03ttl\x18\x04 \x01(\r\"k\n\tCAARecord\x12\x0e\n\x06\x64omain\x18\x01 \x01(\t\x12(\n\x06result\x18\x02 \x01(\x0e\x32\x18.zsearch.CAADomainStatus\x12$\n\x06values\x18\x03 \x03(\x0b\x32\x14.zsearch.CAATagValue\"g\n\tCAALookup\x12\x11\n\ttimestamp\x18\x01 \x01(\x03\x12#\n\x07records\x18\x02 \x03(\x0b\x32\x12.zsearch.CAARecord\x12\"\n\x06result\x18\x03 \x01(\x0e\x32\x12.zsearch.CAAResult*\xb2\x01\n\tCAAResult\x12\x17\n\x13\x43\x41\x41_RESULT_RESERVED\x10\x00\x12!\n\x1d\x43\x41\x41_RESULT_VALIDATION_SUCCESS\x10\x01\x12\x1e\n\x1a\x43\x41\x41_RESULT_VALIDATION_FAIL\x10\x02\x12!\n\x1d\x43\x41\x41_RESULT_VALIDATION_SKIPPED\x10\x03\x12&\n\"CAA_RESULT_VALIDATION_NOT_REQUIRED\x10\x04*\xa9\x05\n\x0f\x43\x41\x41\x44omainStatus\x12\x1e\n\x1a\x43\x41\x41_DOMAIN_STATUS_RESERVED\x10\x00\x12(\n$CAA_DOMAIN_STATUS_VALIDATION_SUCCESS\x10\x01\x12%\n!CAA_DOMAIN_STATUS_VALIDATION_FAIL\x10\x02\x12(\n$CAA_DOMAIN_STATUS_VALIDATION_SKIPPED\x10\x03\x12\x1f\n\x1b\x43\x41\x41_DOMAIN_STATUS_DNS_ERROR\x10\x05\x12(\n$CAA_DOMAIN_STATUS_DNS_ERROR_SERVFAIL\x10\x06\x12(\n$CAA_DOMAIN_STATUS_DNS_ERROR_AUTHFAIL\x10\x07\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_NO_RECORD\x10\x08\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_BLACKLIST\x10\t\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_NO_OUTPUT\x10\n\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_NO_ANSWER\x10\x0b\x12-\n)CAA_DOMAIN_STATUS_DNS_ERROR_ILLEGAL_INPUT\x10\x0c\x12\'\n#CAA_DOMAIN_STATUS_DNS_ERROR_TIMEOUT\x10\r\x12,\n(CAA_DOMAIN_STATUS_DNS_ERROR_ITER_TIMEOUT\x10\x0e\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_TEMPORARY\x10\x0f\x12)\n%CAA_DOMAIN_STATUS_DNS_ERROR_TRUNCATED\x10\x10\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CAARESULT = _descriptor.EnumDescriptor(
   name='CAAResult',
@@ -312,6 +311,7 @@ DESCRIPTOR.message_types_by_name['CAARecord'] = _CAARECORD
 DESCRIPTOR.message_types_by_name['CAALookup'] = _CAALOOKUP
 DESCRIPTOR.enum_types_by_name['CAAResult'] = _CAARESULT
 DESCRIPTOR.enum_types_by_name['CAADomainStatus'] = _CAADOMAINSTATUS
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CAATagValue = _reflection.GeneratedProtocolMessageType('CAATagValue', (_message.Message,), dict(
   DESCRIPTOR = _CAATAGVALUE,
