@@ -1,6 +1,7 @@
 # censys-definitions
 Censys internal Protobuf objects
 
+
 ## Regenerating
 Only do this on OS X in a clean Python 2.7 virtualenv.
 
