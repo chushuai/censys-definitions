@@ -44,6 +44,9 @@ enum Protocol {
     PROTO_PCWORX=310; 
     PROTO_OMRON=311;
     PROTO_ETHERNETIP=312;
+    PROTO_PGSQL=313;
+    PROTO_MELSECQ=314;
+    PROTO_PROCONOS=315;
 }
 
 enum Subprotocol {
